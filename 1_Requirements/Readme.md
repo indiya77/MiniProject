@@ -85,7 +85,7 @@ A Transmission line acts as a connection between Generating station and Distribu
 
 | ID | Description | Status |
 | --- | --- | --- |
-| LR01 | The data will be stored in .txt file. User reads the data and stores in respective variables for future requirement. | Implemented|
-| LR02 | The user can modify the values of paramteres of a considered transmission line according to the requirements of the load. At any considered time period the user can modify the changing parameters and feed it to the tool | Implemented |
+| LR01 | The data will be stored in .txt file. <br/>User reads the data and stores in respective variables for future requirement. | Implemented|
+| LR02 | The user can modify the values of paramteres <br/> of a considered transmission line according to the requirements of the load. <br/> At any considered time period the user can modify the <br/> changing parameters and feed it to the tool | Implemented |
 
 
