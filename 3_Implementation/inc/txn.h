@@ -32,6 +32,13 @@ typedef struct txnLine
     float _regulation;
 }txnLine;
 
+typedef struct txnLineFault
+{
+    float _z0;
+    float _z1;
+    float _z2;
+}txnLineFault;
+
 typedef enum error_t{
     PASS = 0,
     FAIL = -1
@@ -85,6 +92,8 @@ error_t computeEfficiency (txnLine *_param);
  * @return error_t returns error codes
  */
 error_t computeRegulation (txnLine *_param);
+
+error_t getDataFromFile2 (txnLineFault *_param2);
 
 
 
