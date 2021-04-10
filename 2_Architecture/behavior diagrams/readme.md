@@ -4,5 +4,11 @@
 ---
 
 * The Use case diagram for the program is as shown below which is used to describe set of actions a system or a subject can perform.
+![Use case](../../6_ImagesAndVideos/UseCase.png)
+<br/><br/>
 
-![Behaviour](../../6_ImagesAndVideos/UseCase.png)
+## Activity diagram
+---
+
+* The Activity diagram for the program is as shown below which emphasizes on the sequence and control of the flow of the project.
+![Activity](../../6_ImagesAndVideos/Activity.png)
