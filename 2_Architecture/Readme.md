@@ -1,3 +1,3 @@
 # Architecture
 
-* The Behaviour Diagram is added in its folder.
+* The Behaviour Diagrams and structure Diagrams are added in its respective folder.
