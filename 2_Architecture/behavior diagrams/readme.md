@@ -3,7 +3,7 @@
 ## Use case diagram
 ---
 
-* The Use case diagram for the program is as shown below which is used to describe set of actions a system or a subject can perform.
+* The Use case diagram for the program is as shown below which is used to describe set of actions a system or a subject can perform.<br/>
 ![Use case](../../6_ImagesAndVideos/UseCase.png)
 <br/><br/>
 
