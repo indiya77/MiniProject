@@ -31,7 +31,7 @@ A three phase symmetrical fault is caused by application of three equal fault im
 
 Faults in which the balanced state of the network is disturbed are called unsymmetrical or unbalanced faults. There are four major types of faults which occur in a Transmission Line
 * Single Line to Ground Fault (SLG)
-* Line to Ground Fault (LL)
+* Line to Ground Fault (LG)
 * Double Line to Ground Fault (LLG)<br/>
 
 ### Working of the tool
@@ -78,6 +78,7 @@ A Transmission line acts as a connection between Generating station and Distribu
 | --- | --- | --- |
 | HR01 | User should be able to read data from file | Implemented |
 | HR02 | User should be able to modify the data in the file | Implemented |
+| HR03 | If the text file is not found, should raise an issue | Implemented |
 
 
 ### Low level requirements
@@ -87,5 +88,6 @@ A Transmission line acts as a connection between Generating station and Distribu
 | --- | --- | --- |
 | LR01 | The data will be stored in .txt file. <br/>User reads the data and stores in respective variables for future requirement. | Implemented|
 | LR02 | The user can modify the values of paramteres <br/> of a considered transmission line according to the requirements of the load. <br/> At any considered time period the user can modify the <br/> changing parameters and feed it to the tool | Implemented |
+| LR03 | If the text file is not found or the data is not entered in text file <br/> print the error message | Implemented |
 
 
