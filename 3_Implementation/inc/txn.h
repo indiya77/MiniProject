@@ -34,9 +34,21 @@ typedef struct txnLine
 
 typedef struct txnLineFault
 {
-    float _z0;
     float _z1;
     float _z2;
+    float _z0;
+    float _sr;
+    float _vr;
+    float _e;
+    float _ib;
+    float _if_sym;
+    float _ia_slgf;
+    float _if_slgf;
+    float _ia_lgf;
+    float _if_lgf;
+    float _ia0_dlgf;
+    float _ia1_dlgf;
+    float _if_dlgf;
 }txnLineFault;
 
 typedef enum error_t{
@@ -46,7 +58,7 @@ typedef enum error_t{
 
 /**
  * @brief Get the Data From File object
- * @param _param Transmission line parameters
+ * @param _param Transmission line parameters for Performance analysis
  * @return error_t returns error codes
  */
 error_t getDataFromFile (txnLine *_param);
@@ -92,9 +104,65 @@ error_t computeEfficiency (txnLine *_param);
  * @return error_t returns error codes
  */
 error_t computeRegulation (txnLine *_param);
-
+/**
+ * @brief Get the Data From File2 object
+ * @param _param2 Parameters for Fault analysis
+ * @return error_t returns error codes
+ */
 error_t getDataFromFile2 (txnLineFault *_param2);
-
-
+/**
+ * @brief Base current is calculated
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeBaseCurrent (txnLineFault *_param2);
+/**
+ * @brief Symmetrical fault current is computed
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeSymFault (txnLineFault *_param2);
+/**
+ * @brief Compute Ia for SLG fault
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeIaSlg (txnLineFault *_param2);
+/**
+ * @brief Compute fault current for SLG fault
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t ComputeIfSlg (txnLineFault *_param2);
+/**
+ * @brief Compute Ia for LG fault
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeIalg (txnLineFault *_param2);
+/**
+ * @brief Compute fault current for LG fault
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeIfSlg (txnLineFault *_param2);
+/**
+ * @brief Compute Ia1 for LLG fault
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeIa1dlg (txnLineFault *_param2);
+/**
+ * @brief Compute Ia0 for LLG fault
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeIa0dlg (txnLineFault *_param2);
+/**
+ * @brief Compute fault current for LLG fault
+ * @param _param2 Transmission line parameters
+ * @return error_t returns error codes
+ */
+error_t computeIfdlg (txnLineFault *_param2);
 
 #endif
