@@ -39,6 +39,10 @@ Faults in which the balanced state of the network is disturbed are called unsymm
 
 A Transmission line acts as a connection between Generating station and Distribution unit. An Electrical utility personnel will find the best use of this tool for determining the performance level and the fault level of a Transmission line. At any given time, upon the input given by the user to the system with respect to load, power factor, recieving end voltage, resistance and reactance of a transmission line, the personnel will be given the Performance level i.e., the Regulation and Efficiency of a Transmission line. In addition to this, for a specified fault condition the user will also be provided with the magnitude of Fault current of the considered Fault.<br/><br/>
 
+## Cost and Features
+
+### 
+
 ## SWOT Analysis<br/>
 ![Swot analysis](../6_ImagesAndVideos/Swot.png)<br/><br/>
 
@@ -79,6 +83,9 @@ A Transmission line acts as a connection between Generating station and Distribu
 | HR01 | User should be able to read data from file | Implemented |
 | HR02 | User should be able to modify the data in the file | Implemented |
 | HR03 | If the text file is not found, should raise an issue | Implemented |
+| HR04 | If the text file is found, decide which analysis to be performed | Implemented |
+| HR05 | If performance analysis is selected compute respective values | Implemented |
+| HR06 | If fault analysis is selected decide which fault to be considered | Implemented |
 
 
 ### Low level requirements
@@ -89,5 +96,8 @@ A Transmission line acts as a connection between Generating station and Distribu
 | LR01 | The data will be stored in .txt file. <br/>User reads the data and stores in respective variables for future requirement. | Implemented|
 | LR02 | The user can modify the values of paramteres <br/> of a considered transmission line according to the requirements of the load. <br/> At any considered time period the user can modify the <br/> changing parameters and feed it to the tool | Implemented |
 | LR03 | If the text file is not found or the data is not entered in text file <br/> print the error message | Implemented |
+| LR04 | Enter P to compute Performance analysis and <br/> F to compute Fault analysis | Implemented |
+| LR05 | For performance analysis, compute power, current, losses and voltage sent. <br/> Using these parameters compute regulation and efficiency of transmission line | Implemented |
+| LR06 | For fault analysis enter 1 to compute fault current for Single Line to Ground fault, <br/> 2 to compute Line to Ground fault (LG), <br/> 3 to compute Double line to ground fault (LLG). Based on the input <br/> compute the fault current | Implemented |
 
 
