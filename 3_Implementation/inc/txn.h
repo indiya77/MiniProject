@@ -53,7 +53,8 @@ typedef struct txnLineFault
 
 typedef enum error_t{
     PASS = 0,
-    FAIL = -1
+    FAIL = -1,
+    ERR_NEGATIVE = -2
 }error_t;
 
 /**
@@ -133,7 +134,7 @@ error_t computeIaSlg (txnLineFault *_param2);
  * @param _param2 Transmission line parameters
  * @return error_t returns error codes
  */
-error_t ComputeIfSlg (txnLineFault *_param2);
+error_t computeIfSlg (txnLineFault *_param2);
 /**
  * @brief Compute Ia for LG fault
  * @param _param2 Transmission line parameters
@@ -145,7 +146,7 @@ error_t computeIalg (txnLineFault *_param2);
  * @param _param2 Transmission line parameters
  * @return error_t returns error codes
  */
-error_t computeIfSlg (txnLineFault *_param2);
+error_t computeIflg (txnLineFault *_param2);
 /**
  * @brief Compute Ia1 for LLG fault
  * @param _param2 Transmission line parameters
