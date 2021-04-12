@@ -4,14 +4,13 @@
 int main()
 {
     txnLine data;
-    int n;
-    char str;
-    printf ("\nEnter 1 to perform Performance analysis\n"
+    char str, ch;
+    printf ("\nEnter P to perform Performance analysis\n"
              "------------------------------------------------------------------------\n"
-             "Enter 2 to perform Fault Analysis\n"
+             "Enter F to perform Fault Analysis\n"
              "------------------------------------------------------------------------\n");
-    scanf("%d",&n);
-    if (n == 1)
+    scanf("%s",&ch);
+    if (ch == 'P' || ch == 'p')
     {
         getDataFromFile (&data);
         computeImpedance (&data);
@@ -25,7 +24,7 @@ int main()
         printf("The Regulation of the considered Transmission Line is %.2f\n", data._regulation);
     }
     
-    else if (n == 2)
+    else if (ch == 'F' || ch == 'f')
     {
         txnLineFault data2;
         printf ("\nEnter S to compute Symmetrical fault\n"
@@ -33,16 +32,19 @@ int main()
              "Enter U to compute Unsymmetrical fault\n"
              "------------------------------------------------------------------------\n");
         scanf ("%s",&str);
-        getDataFromFile2 (&data2);
-        computeBaseCurrent(&data2);
-        if (str == 'S')
+        if (str == 'S' || str == 's')
         {
-            error_t computeSymFault (txnLineFault *_param2);
+            getDataFromFile2 (&data2);
+            computeBaseCurrent(&data2);
+            printf("%f",data2._ib);
+            computeSymFault (&data2);
             printf("The Symmetrical fault current is %.2f", data2._if_sym);
         }
-        else if (str == 'U')
+        else if (str == 'U' || str == 'u')
         {
             int n2;
+            getDataFromFile2 (&data2);
+            computeBaseCurrent(&data2);
             printf ("\nEnter 1 to compute SLG fault\n"
              "------------------------------------------------------------------------\n"
              "Enter 2 to compute LG fault\n"
@@ -52,21 +54,21 @@ int main()
             scanf ("%d",&n2);
             if (n2 == 1)
             {
-                error_t computeIaSlg (txnLineFault *_param2);
-                error_t ComputeIfSlg (txnLineFault *_param2);
+                computeIaSlg (&data2);
+                computeIfSlg (&data2);
                 printf ("The Single line to ground fault curret is %.2f\n",data2._if_slgf);
             }
             else if (n2 == 2)
             {
-                error_t computeIalg (txnLineFault *_param2);
-                error_t computeIfSlg (txnLineFault *_param2);
-                printf ("The Line to ground fault curret is %.2f\n",data2._if_lgf);
+                computeIalg (&data2);
+                computeIflg (&data2);
+                printf ("The Line to ground fault current is %.2f\n",data2._if_lgf);
             }
             else if (n2 == 3)
             {
-                error_t computeIa1dlg (txnLineFault *_param2);
-                error_t computeIa0dlg (txnLineFault *_param2);
-                error_t computeIfdlg (txnLineFault *_param2);
+                computeIa1dlg (&data2);
+                computeIa0dlg (&data2);
+                computeIfdlg (&data2);
                 printf ("The Line to ground fault curret is %.2f\n",data2._if_dlgf); 
             }
         }
