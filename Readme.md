@@ -2,7 +2,8 @@
 
 ![banner](./6_ImagesAndVideos/Banner.png)<br/><br/>
 
-![bagde](https://www.code-inspector.com/project/21180/status/svg)
+![bagde](https://www.code-inspector.com/project/21180/status/svg) 
+![badge1]([![C/C++ CI](https://github.com/indiya77/MiniProject/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/indiya77/MiniProject/actions/workflows/c-cpp.yml))
 
 # Folder structure
 | Folder | Description |
