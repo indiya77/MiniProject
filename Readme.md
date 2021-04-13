@@ -2,6 +2,8 @@
 
 ![banner](./6_ImagesAndVideos/Banner.png)<br/><br/>
 
+![bagde](https://www.code-inspector.com/project/21180/status/svg)
+
 # Folder structure
 | Folder | Description |
 | --- | --- |
