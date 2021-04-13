@@ -36,7 +36,6 @@ int main()
         {
             getDataFromFile2 (&data2);
             computeBaseCurrent(&data2);
-            printf("%f",data2._ib);
             computeSymFault (&data2);
             printf("The Symmetrical fault current is %.2f", data2._if_sym);
         }
