@@ -1,5 +1,4 @@
-name: valgrind
-
+name: CodeQuality Dynamic Code Analysis Valgrind
 on:
   push:
     branches: [ master ]
@@ -19,5 +18,5 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
       run: make -C 3_Implementation/ tests
-    - name: Valgrind
-      run: make -C 3_Implementation/ valgrind
+    - name: Valgrid
+      run: make -C 3_Implementation/ build/txn.out
