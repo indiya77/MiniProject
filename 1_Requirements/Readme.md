@@ -99,6 +99,7 @@ A Transmission line acts as a connection between Generating station and Distribu
 | LR03 | If the text file is not found or the data is not entered in text file <br/> print the error message | Implemented |
 | LR04 | Enter P to compute Performance analysis and <br/> F to compute Fault analysis | Implemented |
 | LR05 | For performance analysis, compute power, current, losses and voltage sent. <br/> Using these parameters compute regulation and efficiency of transmission line | Implemented |
-| LR06 | For fault analysis enter S to compute Symmetrical fault analysis or U to compute Unsymmetrical fault analysis | Implemented | | LR07 | Enter 1 to evaluate Single line to Ground fault(SLG),<br/> 2 to evaluate Line to Ground (LG) fault and 3 to evaluate Double Line to Ground (LLG)  fault. <br/> The impedances values are in conjugate form.<br/> Hence the current values will also be in conjugate values where the value of the real part is zero. | Implemented |
+| LR06 | For fault analysis enter S to compute Symmetrical fault analysis or U to compute Unsymmetrical fault analysis | Implemented |
+| LR07 | Enter 1 to evaluate Single line to Ground fault(SLG),<br/> 2 to evaluate Line to Ground (LG) fault and 3 to evaluate Double Line to Ground (LLG)  fault. <br/> The impedances values are in conjugate form.<br/> Hence the current values will also be in conjugate values where the value of the real part is zero. | Implemented |
 
 
