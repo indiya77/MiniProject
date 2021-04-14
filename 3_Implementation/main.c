@@ -4,12 +4,13 @@
 int main()
 {
     txnLine data;
-    char str, ch;
+    txnLineFault data2;
+    char ch;
     printf ("\nEnter P to perform Performance analysis\n"
              "------------------------------------------------------------------------\n"
              "Enter F to perform Fault Analysis\n"
              "------------------------------------------------------------------------\n");
-    scanf("%c",&ch);
+    scanf("%s",&ch);
     if (ch == 'P' || ch == 'p')
     {
         getDataFromFile (&data);
@@ -26,20 +27,19 @@ int main()
     
     else if (ch == 'F' || ch == 'f')
     {
-        txnLineFault data2;
         printf ("\nEnter S to compute Symmetrical fault\n"
              "------------------------------------------------------------------------\n"
              "Enter U to compute Unsymmetrical fault\n"
              "------------------------------------------------------------------------\n");
-        scanf ("%c",&str);
-        if (str == 'S' || str == 's')
+        scanf ("%s",&ch);
+        if (ch == 'S' || ch == 's')
         {
             getDataFromFile2 (&data2);
             computeBaseCurrent(&data2);
             computeSymFault (&data2);
             printf("The Symmetrical fault current is %.2f", data2._if_sym);
         }
-        else if (str == 'U' || str == 'u')
+        else if (ch == 'U' || ch == 'u')
         {
             int n2;
             getDataFromFile2 (&data2);
