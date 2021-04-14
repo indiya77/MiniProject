@@ -44,15 +44,16 @@ A Transmission line acts as a connection between Generating station and Distribu
 ### Cost
 ---
 
-*   The cost parameter was none. All the required softwares and were freely available.
+*   The cost parameter was none. All the required softwares were freely available.
 
 ### Features
 ---
 
-*   This project reads the parameters form text file and saves it in variables
+*   This project reads the parameters from text file and saves it in variables
 *   The user can even modify the parameters according to the substation requirements.
 *   The user can choose which analysis to be performed
 *   According to the choice, the user performs either Performance or Fault analysis of transmission line.
+*   Note that the impedances are in conjugate form (a+ib), where the real part is zero and impedances will only be having imaginary part. The parameters hence calculated using impedances will also be in conjugate form.
 
 ### 
 
