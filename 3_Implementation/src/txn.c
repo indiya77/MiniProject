@@ -39,6 +39,7 @@ error_t getDataFromFile (txnLine *_param)
     }
     fclose(fp);
     }
+    return 0;
 }
 
 error_t computeImpedance (txnLine *_param)
@@ -182,7 +183,8 @@ error_t getDataFromFile2 (txnLineFault *_param2)
         }
     }
     fclose(fptr);
-}
+    }
+    return 0;
 }
 
 error_t computeBaseCurrent (txnLineFault *_param2)
