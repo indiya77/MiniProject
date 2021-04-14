@@ -1,14 +1,36 @@
-main.exe : main.c src/txn.c
-	gcc -Iinc ./main.c ./src/txn.c -o main.exe -l m
+CC = gcc
+CFLAGS = -Wall -g
 
-TEST.exe: unity/unity.c tests/test.c src/txn.c
-	gcc -Iinc -Iunity ./src/txn.c ./tests/test.c ./unity/unity.c -o txn.out -l m
+INC = -Iinc -Iunity
+LINK = -lm
 
-runtest: TEST.exe
-	./TEST.exe
+UNITY_SRC = unity/unity.c
 
-run: main.exe
-	./main.exe
+PROJECT = txnanalysis
+SRC = $(wildcard src/*.c)
+MAIN = main.c
 
-clean: 
-	rm *.exe
+ifeq ($(OS),Windows_NT)
+	RM = rm
+	EXEC = $(Project).exeEXEC_TEST = tests/test_$(PROJECT).exe
+
+else
+	RM = rm
+	EXEC = $(PROJECT).out
+	EXEC_TEST = tests/test_$(PROJECT).out
+
+endif 
+ $(EXEC) : $(SRC) $(MAIN)
+	$(CC) $(CFLAGS) $(INC) $^ -o $@ $(LINK)
+
+run : $(EXEC)
+	./$(EXEC)
+
+clean:
+	$(RM) $(EXEC)
+
+$(EXEC_TEST): $(UNITY_SRC) $(SRC) tests/tests.c
+	$(CC) $(CFLAGS) $(INC) $^ -o $@ $(LINK)
+
+runtests: $(EXEC_TEST)
+	./$(EXEC_TEST)
