@@ -8,7 +8,7 @@
 | HT01 | Check if the user can read data from text file | User inputs | File containing required parameters | PASS | Technical |
 | HT02 | Check if the texts from file is stored in variables | Invoke program | Program variables storing parameters | PASS | Technical |
 | HT03 | Decide which analysis to be performed | User inputs | Invoke program | PASS | Technical |
-
+<br/>
 
 ## Low level test plan
 ---
