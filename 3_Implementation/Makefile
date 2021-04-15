@@ -12,7 +12,8 @@ MAIN = main.c
 
 ifeq ($(OS),Windows_NT)
 	RM = rm
-	EXEC = $(PROJECT).exeEXEC_TEST = tests/test_$(PROJECT).exe
+	EXEC = $(PROJECT).out
+	exeEXEC_TEST = tests/test_$(PROJECT).out
 
 else
 	RM = rm
