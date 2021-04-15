@@ -16,6 +16,7 @@
 | 4_TestPlanAndOutput | High level and low level test plans of the project | 
 | 6_ImagesAndVideos | Images relating to the project are added |
 <br/>
+
 # Contributors list and summary
 | PS No. | Name | Features | Issues raised | Issues solved | No. test cases | Test cases passded |
 | --- | --- | --- | --- | --- | --- | --- |
