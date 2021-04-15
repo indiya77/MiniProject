@@ -5,7 +5,7 @@ int main()
 {
     txnLine data;
     txnLineFault data2;
-    char ch;
+    char ch = 'P';
     printf ("\nEnter P to perform Performance analysis\n"
              "------------------------------------------------------------------------\n"
              "Enter F to perform Fault Analysis\n"
@@ -71,6 +71,9 @@ int main()
                 printf ("The Line to ground fault curret is %.2f\n",data2._if_dlgf); 
             }
         }
+    }
+    else {
+        printf("ERROR !");
     }
     return 0;
 }
