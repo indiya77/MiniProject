@@ -2,9 +2,9 @@
 
 ![banner](./6_ImagesAndVideos/Banner.png)<br/><br/>
 
-| Codacy | Build | Unity |
-| --- | --- | --- |
-| [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e4bf510fb7b741c0a62b0031af5400b8)](https://www.codacy.com/gh/indiya77/MiniProject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=indiya77/MiniProject&amp;utm_campaign=Badge_Grade) | [![C/C++ CI](https://github.com/indiya77/MiniProject/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/indiya77/MiniProject/actions/workflows/c-cpp.yml) | [![unit tests](https://github.com/indiya77/MiniProject/actions/workflows/c-unity.yml/badge.svg)](https://github.com/indiya77/MiniProject/actions/workflows/c-unity.yml) |
+| Codacy | Build | Unity | Code quality |
+| --- | --- | --- | --- |
+| [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e4bf510fb7b741c0a62b0031af5400b8)](https://www.codacy.com/gh/indiya77/MiniProject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=indiya77/MiniProject&amp;utm_campaign=Badge_Grade) | [![C/C++ CI](https://github.com/indiya77/MiniProject/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/indiya77/MiniProject/actions/workflows/c-cpp.yml) | [![unit tests](https://github.com/indiya77/MiniProject/actions/workflows/c-unity.yml/badge.svg)](https://github.com/indiya77/MiniProject/actions/workflows/c-unity.yml) | [![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/indiya77/MiniProject/actions/workflows/valgrind.yml/badge.svg)](https://github.com/indiya77/MiniProject/actions/workflows/valgrind.yml) |
 
 
 # Folder structure
