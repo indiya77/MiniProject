@@ -20,9 +20,9 @@ int main()
         computeVoltageSent (&data);
         computeLosses (&data);
         computeEfficiency (&data);
-        printf("The Efficiency of the considered Transmission Line is %.2f\n", data._efficiency);
+        printf("The Efficiency of the considered Transmission Line is %.2f percentage\n", data._efficiency);
         computeRegulation (&data);
-        printf("The Regulation of the considered Transmission Line is %.2f\n", data._regulation);
+        printf("The Regulation of the considered Transmission Line is %.2f percentage\n", data._regulation);
     }
     
     else if (ch == 'F' || ch == 'f')
@@ -37,7 +37,7 @@ int main()
             getDataFromFile2 (&data2);
             computeBaseCurrent(&data2);
             computeSymFault (&data2);
-            printf("The Symmetrical fault current is %.2f", data2._if_sym);
+            printf("The Symmetrical fault current is %.2f Amperes", data2._if_sym);
         }
         else if (ch == 'U' || ch == 'u')
         {
@@ -55,20 +55,20 @@ int main()
             {
                 computeIaSlg (&data2);
                 computeIfSlg (&data2);
-                printf ("The Single line to ground fault curret is %.2f\n",data2._if_slgf);
+                printf ("The Single line to ground fault curret is %.2f Amperes\n",data2._if_slgf);
             }
             else if (n2 == 2)
             {
                 computeIalg (&data2);
                 computeIflg (&data2);
-                printf ("The Line to ground fault current is %.2f\n",data2._if_lgf);
+                printf ("The Line to ground fault current is %.2f Amperes\n",data2._if_lgf);
             }
             else if (n2 == 3)
             {
                 computeIa1dlg (&data2);
                 computeIa0dlg (&data2);
                 computeIfdlg (&data2);
-                printf ("The Line to ground fault curret is %.2f\n",data2._if_dlgf); 
+                printf ("The Line to ground fault curret is %.2f Amperes\n",data2._if_dlgf); 
             }
         }
     }
