@@ -1,4 +1,4 @@
-# Applied SDLC using C language
+# Applied SDLC using C language - completed
 
 An application to perform analysis of a transmission line. The user decides which analysis to be performed according to their requirements. Based on that, Performance or Fault analysis is performed on a transmission line.
 
